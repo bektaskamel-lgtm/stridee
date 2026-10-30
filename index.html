@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>STRIDE — кроссовки нового поколения</title>
+<style>
+:root{--bg:#0b0b0e;--card:#15151b;--line:#26262f;--text:#f3f3f5;--mute:#9a9aa6;--acc:#ff6b3d;--accon:#0b0b0e;--glow:#4a1f10;--sole:#f3f3f5;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f6f6f8;--card:#ffffff;--line:#e2e2e8;--text:#15151b;--mute:#62626e;--acc:#e04a1a;--accon:#ffffff;--glow:#ffd9cc;--sole:#e4e4ea;color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body,.card,.ph,.contact{transition:background .3s,color .3s,border-color .25s}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.6}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;letter-spacing:.2em;font-size:18px}.logo b{color:var(--acc)}
+nav a{color:var(--mute);text-decoration:none;margin-left:22px;font-size:14px}
+nav a:hover{color:var(--acc)}
+.right{display:flex;align-items:center;gap:6px}
+#tg{margin-left:20px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:19px;cursor:pointer;line-height:1}
+#tg:hover{border-color:var(--acc)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;padding:50px 0 70px}
+.tag{color:var(--acc);font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(36px,6vw,66px);line-height:1.05;margin:14px 0 18px;font-weight:800}
+h1 span{color:var(--acc)}
+.hero p{color:var(--mute);max-width:460px;margin-bottom:28px}
+.btn{display:inline-block;background:var(--acc);color:var(--accon);padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+.hero-img{background:radial-gradient(circle at 50% 60%,var(--glow),transparent 65%)}
+.hero-img svg{width:100%;transform:rotate(-8deg)}
+h2{font-size:clamp(26px,4vw,38px);margin-bottom:8px}
+.sub{color:var(--mute);margin-bottom:32px}
+section{padding:50px 0}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ph{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center}
+.ph svg{width:100%}
+.ph small{color:var(--mute);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.25s}
+.card:hover{border-color:var(--acc);transform:translateY(-4px)}
+.ico{font-size:28px;margin-bottom:12px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:var(--mute);font-size:15px}
+.contact{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:50px 20px;margin:30px 0 50px}
+.contact a.mail{color:var(--acc);font-size:clamp(20px,4vw,30px);font-weight:700;text-decoration:none;display:inline-block;margin-top:14px}
+footer{color:var(--mute);font-size:13px;text-align:center;padding:20px 0 30px;border-top:1px solid var(--line)}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr 1fr}nav{display:none}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="shoe" viewBox="0 0 400 220">
+<path d="M18 158 Q18 192 58 192 L355 192 Q388 192 388 165 L388 150 L18 150Z" fill="var(--sole)"/>
+<path d="M18 168 L388 168" stroke="#bbb" stroke-width="3"/>
+<path d="M30 150 L40 72 Q46 54 68 58 L122 70 Q152 102 192 106 L330 120 Q380 130 388 150Z" fill="var(--c1)"/>
+<path d="M40 72 Q46 54 68 58 L122 70 Q130 82 124 96 L52 96Z" fill="var(--c2)"/>
+<path d="M120 74 L186 100 M136 66 L200 94 M154 62 L214 90" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+<path d="M130 140 Q220 100 340 128" stroke="var(--c2)" stroke-width="12" fill="none" stroke-linecap="round"/>
+<circle cx="52" cy="128" r="6" fill="var(--c2)"/>
+</symbol>
+</defs>
+</svg>
+
+<div class="wrap">
+<header>
+<div class="logo">STRIDE<b>.</b></div>
+<div class="right"><nav><a href="#photos">Фото</a><a href="#services">Услуги</a><a href="#contact">Контакты</a></nav><button id="tg" type="button" aria-label="Переключить тему" title="Тёмная / светлая тема">☀️</button></div>
+</header>
+
+<div class="hero">
+<div>
+<div class="tag">Новая коллекция 2026</div>
+<h1>Кроссовки, которые <span>двигают вперёд</span></h1>
+<p>Лёгкие, прочные и стильные. Показываем, как создаются наши кроссовки, из чего сделаны и где их можно купить.</p>
+<a class="btn" href="#services">Смотреть услуги</a>
+</div>
+<div class="hero-img"><svg viewBox="0 0 400 220" style="--c1:#1d1d24;--c2:var(--acc)"><use href="#shoe"/></svg></div>
+</div>
+
+<section id="photos">
+<h2>Галерея</h2>
+<p class="sub">Четыре модели из актуальной линейки</p>
+<div class="gallery">
+<div class="ph"><svg viewBox="0 0 400 220" style="--c1:#1d1d24;--c2:var(--acc)"><use href="#shoe"/></svg><small>Volt Runner</small></div>
+<div class="ph"><svg viewBox="0 0 400 220" style="--c1:#3a2b86;--c2:#ff5ea8"><use href="#shoe"/></svg><small>Neon Drift</small></div>
+<div class="ph"><svg viewBox="0 0 400 220" style="--c1:#d9d9df;--c2:#2d8cff"><use href="#shoe"/></svg><small>Arctic Pro</small></div>
+<div class="ph"><svg viewBox="0 0 400 220" style="--c1:#7a2a12;--c2:#ffb02e"><use href="#shoe"/></svg><small>Ember Street</small></div>
+</div>
+</section>
+
+<section id="services">
+<h2>Услуги и информация</h2>
+<p class="sub">Всё, что нужно знать о наших кроссовках</p>
+<div class="cards">
+<div class="card"><div class="ico">👟</div><h3>Показ кроссовок</h3><p>Презентации новых моделей онлайн и офлайн: примерка, тест-драйв и живой показ коллекции.</p></div>
+<div class="card"><div class="ico">🎨</div><h3>Дизайн</h3><p>Современный силуэт, смелые цвета и индивидуальные расцветки под ваш стиль.</p></div>
+<div class="card"><div class="ico">⚙️</div><h3>Технологии и функции</h3><p>Амортизирующая подошва, дышащая сетка, поддержка стопы и защита от влаги для комфорта весь день.</p></div>
+<div class="card"><div class="ico">💳</div><h3>Цена</h3><p>Честные цены: от 59 € за базовые модели до 149 € за топовую серию. Скидки для постоянных клиентов.</p></div>
+<div class="card"><div class="ico">📍</div><h3>Где приобрести</h3><p>В нашем интернет-магазине, у партнёров в крупных городах и на маркетплейсах с доставкой.</p></div>
+<div class="card"><div class="ico">🧵</div><h3>Материалы</h3><p>Переработанный текстиль, натуральная кожа, лёгкая пена EVA и износостойкая резина.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Свяжитесь с нами</h2>
+<p class="sub" style="margin-bottom:0">Вопросы, заказы и сотрудничество — пишите на почту</p>
+<a class="mail" href="mailto:hello@stride-sneakers.com">hello@stride-sneakers.com</a>
+</div>
+</section>
+</div>
+<footer>© 2026 STRIDE. Все права защищены.</footer>
+
+<script>
+(function(){
+var root=document.documentElement,btn=document.getElementById('tg');
+function apply(t){
+if(t==='light'){root.setAttribute('data-theme','light');btn.textContent='🌙';}
+else{root.removeAttribute('data-theme');btn.textContent='☀️';}
+}
+var saved=null;
+try{saved=localStorage.getItem('theme');}catch(e){}
+apply(saved==='light'?'light':'dark');
+btn.addEventListener('click',function(){
+var next=root.getAttribute('data-theme')==='light'?'dark':'light';
+apply(next);
+try{localStorage.setItem('theme',next);}catch(e){}
+});
+})();
+</script>
+</body>
+</html>
